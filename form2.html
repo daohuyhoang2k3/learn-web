@@ -40,6 +40,92 @@
         size="30"
       />
       <br /><br />
+      <!-- Story -->
+      <label for="story">Mô tả cảm xúc khi Việt Nam ghi bàn phút 90+:</label>
+      <br />
+      <textarea
+        name="story"
+        id="story"
+        placeholder="Gõ thật lòng, đừng giấu cảm xúc"
+        rows="5"
+        cols="50"
+        spellcheck
+      ></textarea>
+      <br /><br />
+
+      <!-- Giới tính -->
+      <fieldset>
+        <legend>Giới tính của bạn (Để chia chỗ ngồi trên xe đi bão):</legend>
+        <label for="male">
+          <input type="radio" id="male" name="gender" value="male" /> Nam
+        </label>
+        <br />
+        <label for="female">
+          <input type="radio" id="female" name="gender" value="female" /> Nữ
+        </label>
+        <br />
+        <label for="other">
+          <input type="radio" id="other" name="gender" value="other" /> Khác
+        </label>
+        <br />
+      </fieldset>
+      <br /><br />
+
+      <!-- Vị trí đá yêu thích -->
+      <label for="position">Bạn thích chơi vị trí nào trên sân bóng:</label>
+      <select name="position" id="position">
+        <option value="Tiền đạo">Tiền đạo</option>
+        <option value="Trung vệ">Trung vệ</option>
+        <option value="Hậu vệ">Hậu vệ</option>
+        <option value="Thủ môn">Thủ môn</option>
+      </select>
+
+      <br /><br />
+
+      <!-- Mức độ fan cuồng -->
+      <label for="fan-level">Mức độ fan cuồng (1-10):</label>
+      <input
+        type="number"
+        id="fan-level"
+        name="fan-level"
+        min="1"
+        max="10"
+        step="1"
+      />
+
+      <br /><br />
+      <!-- Cầu thủ yêu thích nhất -->
+      <label for="favorite-player">Cầu thủ yêu thích nhất:</label>
+      <input
+        type="text"
+        id="favorite-player"
+        name="favorite-player"
+        list="players"
+      />
+
+      <datalist id="players">
+        <option value="Quang Hải"></option>
+        <option value="Văn Lâm"></option>
+        <option value="Công Phượng"></option>
+        <option value="Duy Mạnh"></option>
+        <option value="Xuân Son"></option>
+        <option value="Văn Hậu"></option>
+      </datalist>
+
+      <br /><br />
+
+      <!-- Cam kết -->
+      <p>
+        <b>Bạn có cam kết không quay lưng khi đội tuyển đá chưa được tốt?</b>
+      </p>
+      <label for="agree">Tôi cam kết</label>
+      <input type="checkbox" id="agree" name="agree" checked />
+
+      <br /><br />
+
+      <!-- button -->
+      <button type="submit">Gửi đơn</button>
+      <button type="reset">Xoá hết, viết lại cảm xúc dâng trào</button>
     </form>
   </body>
 </html>
